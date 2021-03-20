@@ -1,28 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" unique-identifier="db-id" version="3.0">
 
-	<metadata>
-	    <dc:title id="t1">Sample .epub Book</dc:title>
-	    <dc:creator opf:role="aut">Thomas Hansen</dc:creator>
-	    <dc:identifier id="db-id">isbn</dc:identifier>
-	    <meta property="dcterms:modified">2014-03-27T09:14:09Z</meta>
-	    <dc:language>en</dc:language>
-	</metadata>
+<metadata>
+    <dc:title id="t1">Recursive Text Output</dc:title>
+    <dc:identifier id="db-id">recursivetext1</dc:identifier>
+    <meta property="dcterms:modified">2020-03-27T09:14:09Z</meta>
+    <dc:language>en</dc:language>
+</metadata>
 
-	<manifest>
-	    <item id="toc" 		 href="toc.xhtml" media-type="application/xhtml+xml" properties="nav" />
-	    <item id="ncx" 		 href="toc.ncx" media-type="application/x-dtbncx+xml" />
-	    <item id="template_css" href="template.css" media-type="text/css" />
-	    <item id="chapter_1" href="chapter_1.xhtml" media-type="application/xhtml+xml" />
-	    <item id="chapter_2" href="chapter_2.xhtml" media-type="application/xhtml+xml" />
-	    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml" />
-	</manifest>
+<manifest>
+    <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
+    <item id="katex.css" href="katex.css" media-type="text/css" />
+    <item id="recursivetext.xhtml" href="recursivetext.xhtml" media-type="application/xhtml+xml" />
+    <item id="KaTeX_AMS-Regular-ttf" href="fonts/KaTeX_AMS-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_AMS-Regular-woff2" href="fonts/KaTeX_AMS-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_AMS-Regular-woff" href="fonts/KaTeX_AMS-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Caligraphic-Bold-ttf" href="fonts/KaTeX_Caligraphic-Bold.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Caligraphic-Bold-woff2" href="fonts/KaTeX_Caligraphic-Bold.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Caligraphic-Bold-woff" href="fonts/KaTeX_Caligraphic-Bold.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Caligraphic-Regular-ttf" href="fonts/KaTeX_Caligraphic-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Caligraphic-Regular-woff2" href="fonts/KaTeX_Caligraphic-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Caligraphic-Regular-woff" href="fonts/KaTeX_Caligraphic-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Fraktur-Bold-ttf" href="fonts/KaTeX_Fraktur-Bold.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Fraktur-Bold-woff2" href="fonts/KaTeX_Fraktur-Bold.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Fraktur-Bold-woff" href="fonts/KaTeX_Fraktur-Bold.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Fraktur-Regular-ttf" href="fonts/KaTeX_Fraktur-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Fraktur-Regular-woff2" href="fonts/KaTeX_Fraktur-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Fraktur-Regular-woff" href="fonts/KaTeX_Fraktur-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Main-Bold-ttf" href="fonts/KaTeX_Main-Bold.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Main-Bold-woff2" href="fonts/KaTeX_Main-Bold.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Main-Bold-woff" href="fonts/KaTeX_Main-Bold.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Main-BoldItalic-ttf" href="fonts/KaTeX_Main-BoldItalic.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Main-BoldItalic-woff2" href="fonts/KaTeX_Main-BoldItalic.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Main-BoldItalic-woff" href="fonts/KaTeX_Main-BoldItalic.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Main-Italic-ttf" href="fonts/KaTeX_Main-Italic.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Main-Italic-woff2" href="fonts/KaTeX_Main-Italic.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Main-Italic-woff" href="fonts/KaTeX_Main-Italic.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Main-Regular-ttf" href="fonts/KaTeX_Main-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Main-Regular-woff2" href="fonts/KaTeX_Main-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Main-Regular-woff" href="fonts/KaTeX_Main-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Math-BoldItalic-ttf" href="fonts/KaTeX_Math-BoldItalic.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Math-BoldItalic-woff2" href="fonts/KaTeX_Math-BoldItalic.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Math-BoldItalic-woff" href="fonts/KaTeX_Math-BoldItalic.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Math-Italic-ttf" href="fonts/KaTeX_Math-Italic.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Math-Italic-woff2" href="fonts/KaTeX_Math-Italic.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Math-Italic-woff" href="fonts/KaTeX_Math-Italic.woff" media-type="application/font-woff" />
+    <item id="KaTeX_SansSerif-Bold-ttf" href="fonts/KaTeX_SansSerif-Bold.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_SansSerif-Bold-woff2" href="fonts/KaTeX_SansSerif-Bold.woff2" media-type="font/woff2" />
+    <item id="KaTeX_SansSerif-Bold-woff" href="fonts/KaTeX_SansSerif-Bold.woff" media-type="application/font-woff" />
+    <item id="KaTeX_SansSerif-Italic-ttf" href="fonts/KaTeX_SansSerif-Italic.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_SansSerif-Italic-woff2" href="fonts/KaTeX_SansSerif-Italic.woff2" media-type="font/woff2" />
+    <item id="KaTeX_SansSerif-Italic-woff" href="fonts/KaTeX_SansSerif-Italic.woff" media-type="application/font-woff" />
+    <item id="KaTeX_SansSerif-Regular-ttf" href="fonts/KaTeX_SansSerif-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_SansSerif-Regular-woff2" href="fonts/KaTeX_SansSerif-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_SansSerif-Regular-woff" href="fonts/KaTeX_SansSerif-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Script-Regular-ttf" href="fonts/KaTeX_Script-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Script-Regular-woff2" href="fonts/KaTeX_Script-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Script-Regular-woff" href="fonts/KaTeX_Script-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Size1-Regular-ttf" href="fonts/KaTeX_Size1-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Size1-Regular-woff2" href="fonts/KaTeX_Size1-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Size1-Regular-woff" href="fonts/KaTeX_Size1-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Size2-Regular-ttf" href="fonts/KaTeX_Size2-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Size2-Regular-woff2" href="fonts/KaTeX_Size2-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Size2-Regular-woff" href="fonts/KaTeX_Size2-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Size3-Regular-ttf" href="fonts/KaTeX_Size3-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Size3-Regular-woff2" href="fonts/KaTeX_Size3-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Size3-Regular-woff" href="fonts/KaTeX_Size3-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Size4-Regular-ttf" href="fonts/KaTeX_Size4-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Size4-Regular-woff2" href="fonts/KaTeX_Size4-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Size4-Regular-woff" href="fonts/KaTeX_Size4-Regular.woff" media-type="application/font-woff" />
+    <item id="KaTeX_Typewriter-Regular-ttf" href="fonts/KaTeX_Typewriter-Regular.ttf" media-type="application/font-sfnt" />
+    <item id="KaTeX_Typewriter-Regular-woff2" href="fonts/KaTeX_Typewriter-Regular.woff2" media-type="font/woff2" />
+    <item id="KaTeX_Typewriter-Regular-woff" href="fonts/KaTeX_Typewriter-Regular.woff" media-type="application/font-woff" />
+</manifest>
 
-	<spine toc="ncx">
-		<itemref idref="toc" />
-	    <itemref idref="chapter_1" />
-	    <itemref idref="chapter_2" />
-	    <itemref idref="copyright" />
-	</spine>
+<spine>
+    <itemref idref="recursivetext.xhtml" />
+</spine>
 
 </package>
